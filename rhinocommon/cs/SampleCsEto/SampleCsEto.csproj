@@ -87,6 +87,10 @@
     <Compile Include="Views\SampleCsEtoPanel.cs" />
     <Compile Include="Views\SampleCsEtoPropertiesPage.cs" />
     <Compile Include="Views\SampleCsEtoSemiModalDialog.cs" />
+    <Compile Include="Selections\SelectionStore.cs" />
+    <Compile Include="Selections\DocData.cs" />
+    <Compile Include="DisplayConduit.cs" />
+    <Compile Include="Constants.cs" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -100,6 +104,12 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Resources\SampleCs.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Selections\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
