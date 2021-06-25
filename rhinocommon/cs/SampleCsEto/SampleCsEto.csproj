@@ -14,6 +14,7 @@
     <FileAlignment>512</FileAlignment>
     <IsWebBootstrapper>false</IsWebBootstrapper>
     <TargetFrameworkProfile />
+    <RhinoMacLauncher>/Applications/Rhino 7.app</RhinoMacLauncher>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -50,6 +51,18 @@
     <Reference Include="System.Drawing" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Eto">
+      <HintPath>packages\RhinoCommon.7.7.21160.5001\lib\net48\Eto.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json.Rhino">
+      <HintPath>packages\RhinoCommon.7.7.21160.5001\lib\net48\Newtonsoft.Json.Rhino.dll</HintPath>
+    </Reference>
+    <Reference Include="Rhino.UI">
+      <HintPath>packages\RhinoCommon.7.7.21160.5001\lib\net48\Rhino.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="RhinoCommon">
+      <HintPath>packages\RhinoCommon.7.7.21160.5001\lib\net48\RhinoCommon.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Commands\SampleCsEtoCoffee.cs" />
@@ -110,4 +123,5 @@ Erase "$(TargetPath)"</PostBuildEvent>
     <StartAction>Program</StartAction>
     <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
+  <Import Project="packages\RhinoCommon.7.7.21160.5001\build\RhinoCommon.targets" Condition="Exists('packages\RhinoCommon.7.7.21160.5001\build\RhinoCommon.targets')" />
 </Project>
